@@ -1,23 +1,36 @@
+import React, { useState } from 'react';
+
 import './App.css';
 import languages from './Components/multilanguage/languages';
 import translations from './Components/multilanguage/translations';
 import Sidebar from './Components/Sidebar';
-import React, { useState } from 'react';
+import PageManager from './Components/PageManager';
 
 function App() {
 
   const [lang, setLang] = useState('en');
 
   const [translation, setTranslation] = useState(translations['en']);
+
+  const [page, setPage] = useState(0);
+
   
   const changeLanguageHandler = (value) => {
     setLang(value)
     setTranslation(translations[value])
   }
 
+  const changePageHandler = (value) => {
+    setPage(value)
+  }
+
   return (
     <div className="App bg-gray-800">
-      <Sidebar lang={lang} languages={languages} translation={translation} handleChangeLanguage={changeLanguageHandler}></Sidebar>
+      <div className='relative min-h-screen flex'>
+        <Sidebar page={page} handleChangePage={changePageHandler} lang={lang} languages={languages} 
+          translation={translation} handleChangeLanguage={changeLanguageHandler}></Sidebar>
+        <PageManager page={page}></PageManager>
+      </div>
     </div>
   );
 }
