@@ -5,6 +5,7 @@ import languages from './Components/multilanguage/languages';
 import translations from './Components/multilanguage/translations';
 import Sidebar from './Components/Sidebar';
 import PageManager from './Components/PageManager';
+import NavBar from "./Components/NavBar";
 
 function App() {
 
@@ -27,9 +28,9 @@ function App() {
   return (
     <div className="App bg-gray-800">
       <div className='relative min-h-screen flex'>
-        <Sidebar page={page} handleChangePage={changePageHandler} lang={lang} languages={languages} 
-          translation={translation} handleChangeLanguage={changeLanguageHandler}></Sidebar>
-        <PageManager page={page}></PageManager>
+        {/*<Sidebar page={page} handleChangePage={changePageHandler} lang={lang} languages={languages} */}
+        {/*  translation={translation} handleChangeLanguage={changeLanguageHandler}></Sidebar>*/}
+        <PageManager handleChangePage={changePageHandler} page={page}></PageManager>
       </div>
     </div>
   );

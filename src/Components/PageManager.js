@@ -3,6 +3,8 @@ import About from '../Components/Pages/About';
 import Skills from './Pages/Skills';
 import Projects from './Pages/Projects';
 import Contact from './Pages/Contact';
+import NavBar from "./NavBar";
+import React from "react";
 
 function PageManager(props) {
 
@@ -22,7 +24,8 @@ function PageManager(props) {
     }
 
     return (
-        <div>
+        <div className="bg-gradient-to-r from-bgColor-start to-bgColor-stop w-full text-white">
+            <NavBar handleChangePage={props.handleChangePage} page={props.page}/>
             {SwitchPage(props)}
         </div>
     );

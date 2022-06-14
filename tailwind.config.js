@@ -11,7 +11,14 @@ module.exports = {
           700 : '#353535',
           800 : '#262626',
           900 : '#171818',
+        },
+        bgColor: {
+          start: '#16222A',
+          stop: '#16222A',
         }
+      },
+      fontFamily: {
+        'serif': ['GeneralSans']
       }
     },
   },

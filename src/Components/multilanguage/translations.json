@@ -1,5 +1,8 @@
 {
     "en": {
+        "translation": {
+            "home": "HOME"
+        },
         "sidebar": {
             "buttons": [
                 "HOME",
@@ -9,9 +12,13 @@
                 "CONTACT"
             ],
             "lang": "LANGUAGE"
-       }
+        }
+
     },
     "spa": {
+        "translation": {
+            "Welcome to React": "Welcome to React and react-i18next"
+        },
         "sidebar": {
             "buttons": [
                 "INICIO",
@@ -21,6 +28,20 @@
                 "CONTACTO"
             ],
             "lang": "IDIOMA"
-       }
+        },
+        "navbar": {
+            "buttons": [
+                "INICIO",
+                "SOBRE MI",
+                "HABILIDADES",
+                "PROYECTOS (PROXIMAMENTE)",
+                "CONTACTO"
+            ],
+            "lang": "IDIOMA"
+        },
+        "home": {
+            "title": "Mario Roca",
+            "text": "Full stack developer"
+        }
     }
 }

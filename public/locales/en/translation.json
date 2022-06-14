@@ -1,0 +1,12 @@
+{
+  "navbar": {
+    "buttons": [
+      "HOME",
+      "ABOUT",
+      "SKILLS",
+      "PROJECTS (COMING SOON)",
+      "CONTACT"
+    ],
+    "lang": "LANGUAGE"
+  }
+}
