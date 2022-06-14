@@ -24,7 +24,7 @@ function PageManager(props) {
     }
 
     return (
-        <div className="bg-gradient-to-r from-bgColor-start to-bgColor-stop w-full text-white">
+        <div className="w-full text-white">
             <NavBar handleChangePage={props.handleChangePage} page={props.page}/>
             {SwitchPage(props)}
         </div>
